@@ -5,6 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./assets/css/reset.css" />
 
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="./assets/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="./assets/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./assets/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./assets/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./assets/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./assets/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./assets/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./assets/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="./assets/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./assets/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./assets/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="./assets/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
@@ -13,29 +34,34 @@
     <title>F8 Project 01</title>
   </head>
   <body>
-    <main>
-      <!-- Header -->
-      <header class="header">
+    
+      <header class="fixed-header">
         <div class="content">
-          <nav class="navbar">
-            <!-- logo -->
-            <img src="./assets/img/Logo.svg" alt="Besnik." />
-            <!-- Navigation -->
-            <ul>
-              <li><a href="#!">Home</a></li>
-              <li><a href="#!">Features</a></li>
-              <li><a href="#!">Services</a></li>
-              <li><a href="#!">Resources</a></li>
-              <li><a href="#!">Contact</a></li>
-            </ul>
-            <!-- Action -->
-            <div class="actions">
-              <a href="#!" class="action-link">Sign in</a>
-              <a href="#!" class="btn action-btn">Sign up</a>
-            </div>
-          </nav>
+             <!-- Navbar -->
+             <nav class="navbar">
+              <!-- logo -->
+              <a href="#"><img src="./assets/img/Logo.svg" alt="Besnik." /></a>
+              <!-- Navigation -->
+              <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#resources">Resources</a></li>
+                <li><a href="#contact">Contact</a></li>
+              </ul>
+              <!-- Action -->
+              <div class="actions">
+                <a href="#!" class="action-link">Sign in</a>
+                <a href="#!" class="btn action-btn">Sign up</a>
+              </div>
+            </nav>
+        </div>
+      </header>
 
-          <div class="hero">
+      <main>
+      <!-- Hero -->
+      <div id="features" class="hero-wrap">
+        <div class="content">
             <div class="info">
               <p class="desc" class="sub-title">Welcome to Besnik Agency</p>
               <h1 class="title">Discover a place you'll love to live.</h1>
@@ -50,12 +76,11 @@
               alt="Discover a place you'll love to live."
               class="hero-img"
             />
-          </div>
         </div>
-      </header>
+      </div>
 
       <!-- Clients -->
-      <div class="clients">
+      <div id="services" class="clients">
         <div class="content">
           <div class="row">
             <img src="./assets/img/Logo.png" alt="Besnik." />
@@ -74,11 +99,22 @@
             <p class="desc">5 Star Ratings (2k+ Review)</p>
           </div>
           <div class="images">
-            <img src="./assets/img/1.svg" alt="Client 1" />
-            <img src="./assets/img/2.svg" alt="Client 2" />
-            <img src="./assets/img/3.svg" alt="Client 3" />
-            <img src="./assets/img/4.svg" alt="Client 4" />
-            <img src="./assets/img/5.svg" alt="Client 5" />
+            <a href="#!">
+              <img src="./assets/img/1.svg" alt="Client 1" />            
+            </a>
+            <a href="#!">
+              <img src="./assets/img/2.svg" alt="Client 2" />
+            </a>
+            <a href="#!">
+              <img src="./assets/img/3.svg" alt="Client 3" />
+            </a>
+            <a href="#!">
+              <img src="./assets/img/4.svg" alt="Client 4" />
+            </a>
+            <a href="#!">
+              <img src="./assets/img/5.svg" alt="Client 5" />
+
+            </a>
           </div>
         </div>
       </div>
@@ -223,7 +259,7 @@
         </div>
       </div>
       <!-- Stats -->
-       <div class="stats">
+       <div id="resources" class="stats">
         <div class="content">
           <div class="row ">
             <div class="img-block">
@@ -318,9 +354,9 @@
           </div>
         </div>
        </div>
-
+      </main>
        <!-- Footer -->
-        <footer class="footer">
+        <footer id="contact" class="footer">
             <div class="content">
               <div class="row row-top">
                 <!-- Product column -->
@@ -397,6 +433,6 @@
               </div>
             </div>
         </footer>
-    </main>
+    
   </body>
 </html>
